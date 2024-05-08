@@ -5,10 +5,11 @@ body {
     text-align: center;
 }
 
-button {
+.button {
     background-color: #fff;
     color: #000;
     border: none;
+    border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
     margin: 10px;
