@@ -9,9 +9,9 @@
 <body>
     <h1>Добро пожаловать в ваш личный кабинет, {{ username }}!</h1>
     <div class="user-info">
-        <img src="{{ user_photo_url }}" alt="Фотография пользователя" width="450" height="450">
         <p>Имя пользователя: {{ username }}</p>
         <p>Логин: {{ user_login }}</p>
+        <p>Дата регистрации: {{ registration_date }}</p>
     </div>
 </body>
 </html>

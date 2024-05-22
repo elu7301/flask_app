@@ -8,7 +8,10 @@
 </head>
 <body>
     <h1>Добро пожаловать!</h1>
-    <button onclick="location.href='login'" class="button">Войти</button>
-    <button onclick="location.href='register'" class="button">Зарегистрироваться</button>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+    <button onclick="location.href='{{ url_for('login') }}'" class="button">Войти</button>
+    <button onclick="location.href='{{ url_for('register') }}'" class="button">Зарегистрироваться</button>
 </body>
 </html>
